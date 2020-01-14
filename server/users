@@ -1,0 +1,3 @@
+{"id":1,"avatar":"http://localhost:3000/avatar/id1.jpg","name":"Jack Pumpkin","follower":false,"information":{"age":1000,"sex":"men","country":"Russia","city":"Moscow"},"_id":"JciowoNAzohKf0yb"}
+{"id":3,"avatar":"http://localhost:3000/avatar/id3.jpg","name":"Victor FranK","follower":false,"information":{"age":40,"sex":"men","country":"Russia","city":"Moscow"},"_id":"gj9R5nSuQPzp49CS"}
+{"id":2,"avatar":"http://localhost:3000/avatar/id2.jpg","name":"Vich Rich","follower":false,"information":{"age":20,"sex":"female","country":"Russia","city":"Moscow"},"_id":"rkawaklFwDtq3MAm"}
