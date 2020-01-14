@@ -1,0 +1,51 @@
+.profile{
+    display: grid;
+    grid-area: profile;
+    grid-template-areas: "imgAvatar infoProfile";
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 10fr;
+    grid-gap: 2vw;
+  }
+  
+  .profile_avatar{
+    grid-area: imgAvatar;
+    display: grid;
+    grid-template-areas:
+    "profile_avatar_block"
+    "profile_avatar_bt";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10fr 1.5fr;
+    border:var( --border);
+    
+  }
+  .profile_avatar_block{
+    grid-area: profile_avatar_block;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .profile_avatar_block_img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  .react-file-reader-button{
+    height: 100%;
+    width: 100%;
+  }
+  .profile_avatar_bt{
+    grid-area: profile_avatar_bt;
+    display: grid;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .infoProfile{
+    grid-area: infoProfile;
+    background-color:  var(--backgoundColor);
+    border:var( --border);
+    text-indent: 3%;
+    display:grid;
+  }

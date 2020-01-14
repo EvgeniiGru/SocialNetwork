@@ -1,0 +1,11 @@
+.content{
+    grid-area: cont;
+    display: grid;
+    grid-template-areas:
+    "profile" 
+    "gallery"
+    "post";
+    grid-template-rows: 8fr;
+    grid-template-columns: 8fr .3fr;
+    grid-gap: 2vw;
+  }

@@ -1,0 +1,84 @@
+.content{
+    display: grid;
+    grid-template-areas: "line_download"
+    "line_picture" ;
+    grid-template-columns: 8fr .3fr;
+    grid-template-areas: 30px auto; 
+    grid-gap: 2vw;
+}
+
+.line_download{
+    display: grid;
+    grid-area: line_download;
+    grid-template-areas: "adress download";
+    grid-template-columns: 20fr 2fr;
+    widows: 100%;
+    height: 40px;
+}
+
+.adress{
+    display:grid;
+    grid-area: adress;
+    height: 40px;
+}
+
+.adress_item{
+    background-color: var(--backgoundColor);
+    border:var( --border);
+    font-size: 15px;
+    color:var(--pumpkin-color);
+    text-indent:3%;
+    outline: none;
+    padding-left: 1%;
+}
+
+.download{
+    display:grid;
+    grid-area: download;
+    width: 100%;
+}
+
+.choose{
+    display:grid;
+    grid-area: choose;
+  
+}
+
+.download_bt, .choose_bt{
+    height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.line_picture{
+    min-height: 25vw;
+    display: flex;
+    grid-area: line_picture;
+    flex-wrap: wrap;
+    width: 100%;
+    border:var(--border);    
+    background-color: var(--backgoundColor);
+    justify-content: center;
+    align-items: stretch;
+}
+
+.imgBlock{
+    display: flex;
+    min-width: 15%;
+    max-width: 50%;
+    border: 2px solid var(--backgoundColor);
+    max-height: 100%;
+}
+
+.img{
+    min-width: 15%;
+    max-width: 100%; 
+    height: 30vw;
+}
+
+.form_item{
+    display: none;
+    position: relative;
+    margin: 10px;
+    
+}

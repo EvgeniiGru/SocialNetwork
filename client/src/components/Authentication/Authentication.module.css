@@ -1,0 +1,58 @@
+.body{
+    height: 85vh;
+    width: 100vw;
+    background: var( --backgoundColor);
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+.form{
+    display: grid;
+    height: 30vh;
+    width: 30vw; 
+    grid-template-areas: "mail" 
+    "reg" 
+    "panel";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center;
+}
+
+.block_mail{
+    grid-area: mail;
+    width: 100%;
+    align-self: stretch;
+    justify-content: center;
+    display: inline-flex;
+    height: 45%;
+    margin-block-start: 7%;
+}
+.text_mail{width: 20%;}
+.mail{width: 70%;}
+
+.block_reg{
+    grid-area: reg;
+    width: 100%;
+    align-self: stretch;
+    justify-content: center;
+    display: inline-flex;
+    height: 45%;
+    margin-block-start: 7%;
+}
+.text_reg{width: 20%;}
+.reg{width: 70%;}
+
+.bt_panel{
+    grid-area: panel;
+    width: 100%;
+    align-self: stretch;
+    justify-content: center;
+    display: inline-flex;
+    height: 50%;
+    margin-block-start: 5%;
+}
+.ok{width: 45%; }
+.regist{width: 45%; }
+
+

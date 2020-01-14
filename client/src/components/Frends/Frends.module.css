@@ -1,0 +1,111 @@
+.all{
+    display: grid;
+    grid-template-columns:8fr 0.5fr;
+    grid-template-rows: 10px auto 80px;
+    grid-template-areas:
+    "radio"
+    "body"
+    "btMoreMenu" ;
+    grid-gap: 1%;
+
+}
+
+.radio{
+    grid-area: radio;
+    display:inline-flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.body{
+    grid-area: body;
+    text-decoration: none;
+    min-height: 78vh;
+    padding: 0px;
+}
+
+.itemFilter{
+    height: 15%;
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+}
+
+.nameFilter{
+    width: 100%;
+}
+.itemsFilterPoint{
+    widows: 100%;;
+}
+
+.btMoreMenu{
+    grid-area: btMoreMenu;
+    justify-items: center;
+}
+
+.btMore{
+    height: 40%;
+    width: 10%;
+}
+
+.btMore:hover{
+    background: var(--pumpkin-color);
+    color: var(--blackColor);
+    border: 2px solid  var(--blackColor); 
+}
+
+.btUp{
+    border-radius: 100%;
+}
+
+.itemPeople{
+    display: grid;
+    grid-template-areas: "avatar info addFrend";
+    grid-template-columns: 7% 70% 20%;
+    height: 15vh;
+    list-style-type: none;
+    align-items: center;
+}
+
+.avatar{
+    grid-area: avatar;
+    width: 100%;
+    height: 100%;
+}
+.info{
+    grid-area: info;
+    text-decoration: none;
+}
+.itemsInfo{
+    height: 20%;
+    font-size: 2vh;
+}
+.addFrend{
+    grid-area: addFrend;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+}
+
+.messageFrendBt{
+    width: 75%;
+    height: 40%;
+}
+
+.endFrendBt{
+    width: 25%;
+    height: 40%;
+}
+
+.delOrAddFrendBt{
+    width: 50%;
+    height: 40%;
+}
+
+
+.delRequestsFrendBt{
+    width: 100%;
+    height: 40%;
+}

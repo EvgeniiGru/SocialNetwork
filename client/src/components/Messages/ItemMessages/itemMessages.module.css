@@ -1,0 +1,120 @@
+.content{
+    display: grid;
+    grid-template-areas: "head"
+    "list_messeges"
+    "footer" ;
+    grid-template-columns: 8fr .3fr;
+    grid-template-rows: 5% 80% 5%;
+    height: 100vh;
+}
+
+.head{
+    display: grid;
+    grid-area:head;
+    grid-template-areas: "btup name";
+    grid-template-columns: 10% 90%;
+    background-color: var(--backgoundColor);
+    border:var( --border);
+}
+
+.btup{
+    display: grid;
+    grid-area: btup;
+    background-color: var(--backgoundColor);
+}
+
+.name{
+    display: grid;
+    grid-area: name;
+}
+
+
+.list_messeges{
+    display: grid;
+    grid-area: list_messeges;
+    text-decoration: none;
+    align-content: flex-start;
+    padding: 0px;
+    height: 80vh;
+    overflow-y: scroll;
+    background-color: var(--backgoundColor);
+    border: var(--border);
+    margin:0px;
+}
+
+.item_message{
+    display: grid;
+    grid-template-areas: "itemHead" 
+    "sms";
+    grid-template-rows: 50px auto;
+    width: 99%;
+    padding: 1%;
+    padding-right: 0px;
+    height: 10%;
+    background-color: var(--backgoundColor);
+    border: none;
+}
+
+.itemHead{
+    width: 95%;
+    display: grid;
+    grid-area: itemHead;
+    grid-template-areas: "img name_user time";
+}
+
+.img{
+    width: 50px;
+    grid-area: img;
+}
+
+.name_user{
+    grid-area: name_user;
+    text-align: center;
+    text-decoration: none;
+    color: var(--pumpkin-color);
+}
+
+.time{
+    grid-area: time;
+   text-align: end;
+}
+
+.sms{ 
+    margin-top: -20px;
+    margin-left: 60px;
+    width: 70vw;
+    min-height: 10px;
+    resize: vertical;
+    grid-area: sms;
+    border: none;
+    outline: none;
+    color: var(--pumpkin-color);
+    background-color: var(--backgoundColor);
+}
+
+.sms:focus{
+    border:none;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-area:footer;
+    grid-template-areas: "my_messages send";
+    margin-top:2px;
+}
+
+.my_messages{
+    grid-area: my_messages;
+    background-color: var(--backgoundColor);
+    border:var( --border);
+    font-size: 15px;
+    color:var(--pumpkin-color);
+    text-indent:3%;
+    outline: none;
+    padding-left: 1%;
+}
+
+.send{
+    grid-area: send;
+}

@@ -1,0 +1,19 @@
+
+  .navigator{ 
+    grid-area: navigator;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .navigator_item{
+    cursor:pointer;
+    margin-bottom: 5%;
+  }
+  .navigator_item:hover {
+    background-color:  var(--blackColor);
+  }
+  
+  .navigator_item a{
+    text-decoration: none;
+    color:var(--pumpkin-color);
+  }

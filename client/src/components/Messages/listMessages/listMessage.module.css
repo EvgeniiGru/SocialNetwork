@@ -1,0 +1,92 @@
+.content{
+    display: grid;
+    grid-template-areas: "search_item"
+    "list_messeges";
+    grid-template-rows: 5% 80%;
+    grid-template-columns: 8fr 0.5fr;  
+    grid-gap: 1%;
+    height: 100vh;
+}
+
+.search_item{
+    display: grid;
+    height: 100%;
+    grid-area: search_item;
+    background-color: var(--backgoundColor);
+    border:var( --border);
+    font-size: 15px;
+    color:var(--pumpkin-color);
+    text-indent:3%;
+    outline: none;
+    padding-left: 1%;
+  }
+  
+  .search_item:focus{
+    background-color:  var(--blackColor);
+    color: white;
+    outline: none;
+  }
+    .message:focus{
+      border:none;    
+    }
+    
+
+.list_messeges{
+    
+    grid-area: list_messeges;
+    text-decoration: none;
+    align-content: flex-start;
+    padding: 0px;
+    height: 90vh;
+    overflow-y: scroll;
+    background-color: var(--backgoundColor);
+    border: var(--border);
+
+    
+}
+
+.item_message{
+    display: grid;
+    grid-template-areas: "img message button";
+    grid-template-columns: 1fr 18fr .5fr;
+    width: 99%;
+    padding: 1%;
+    padding-right: 0px;
+    height: 10%;
+    background-color: var(--backgoundColor);
+    border-bottom: var(--border);
+    border-top:none;
+    border-left:none;
+    border-right: none;
+}
+
+.img{
+    width: 100%;
+    grid-area: img;
+}
+
+.message{ 
+    grid-area: message;
+    background-color: inherit;
+    resize: none;
+    border: none;
+    outline: none;
+    color: var(--pumpkin-color);
+    
+}
+
+.message:focus{
+    border:none;
+}
+.button{
+    grid-area: button;
+    transition: .5s all;
+    opacity: 0;
+    background-color: inherit;
+    border:none;
+}
+
+.button:hover {
+    opacity:1;  
+}
+ .button:focus {border:none;}
