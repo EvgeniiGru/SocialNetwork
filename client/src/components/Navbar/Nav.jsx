@@ -18,7 +18,7 @@ const NavBar = (props) => {
       <NavLink to="/music">Music</NavLink>
     </div> */}
     <div className="navigator_item">
-      <a href="/gallery">Galerrey</a>
+      <a href="/gallery">Gallery</a>
     </div>
     <div className="navigator_item">
       <NavLink to="/search">Search Frends</NavLink>
