@@ -13,6 +13,7 @@ import ProfileConteiner from './components/Profile/ProfileConteiner';
 import AUContainer from './components/Authentication/AuthenticationConteiner';
 import FrendsContainer from './components/Frends/FrendsConteiner';
 import NavBarContainer from './components/Navbar/NavContainer';
+import { Redirect } from 'react-router-dom';
 
 
 
@@ -21,6 +22,7 @@ const App = (props) => {
     return (
       <div className="app-wraper">
         <Header />
+        <Redirect to="/login" />
         <Route path="/login" render={() => <AUContainer />} />
       </div>)
   } else {
