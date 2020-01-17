@@ -1,4 +1,6 @@
 import { frendsQureGet } from "../API/api";
+import { frendsQurePost } from "../API/apiPost";
+import { frendsQureDelete, unfollow, mayBeFrendDel } from "../API/apiDel";
 
 const SET_FRENDS = "SET_FRENDS";
 const SET_MAY_BE_FRENDS = "SET_MAY_BE_FRENDS"
@@ -96,7 +98,6 @@ export const ChangeCheckBoxValue = (body) => ({ type: CHANGE_CHECK_BOX_VALUE, bo
 
 
 export const getFrends = (count,pageNow) => (dispatch) => {
-
         dispatch(changePreload(true))
         frendsQureGet(count,pageNow).then(res => {
             dispatch( changePreload(false))
@@ -107,4 +108,40 @@ export const getFrends = (count,pageNow) => (dispatch) => {
             dispatch  (setMaxPagesMayBeFrends(res.mayBeFrends.maxPage))
             dispatch (setMaxPagesFrendsRequests(res.frendsRequests.maxPage))
     })
+}
+
+export const addFrends = (frendID) => (dispatch) => {
+    dispatch(changePreload(true));
+    frendsQurePost(frendID).then(res => {
+        dispatch( changePreload(false))
+        dispatch( changePage(1));
+        dispatch( getFrends(5, 1))
+    }); 
+}
+
+export const delFrends = (frendID) => (dispatch) => {
+    dispatch(changePreload(true));
+    frendsQureDelete(frendID).then(res => {
+        dispatch( changePreload(false))
+        dispatch( changePage(1));
+        dispatch( getFrends(5, 1))
+    }); 
+}
+
+export const unfollowFrends = (frendID) => (dispatch) => {
+    dispatch(changePreload(true));
+    unfollow(frendID).then(res => {
+        dispatch( changePreload(false))
+        dispatch( changePage(1));
+        dispatch( getFrends(5, 1))
+    }); 
+}
+
+export const wayBeFrendDelet = (frendID) => (dispatch) => {
+    dispatch(changePreload(true));
+    mayBeFrendDel(frendID).then(res => {
+        dispatch( changePreload(false))
+        dispatch( changePage(1));
+        dispatch( getFrends(5, 1))
+    }); 
 }
